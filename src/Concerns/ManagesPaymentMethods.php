@@ -238,7 +238,7 @@ trait ManagesPaymentMethods
         }
 
         if ($paymentMethod->type === 'sepa_debit') {
-            $this->card_brand = $paymentMethod->sepa_debit->bank_account;
+            $this->card_brand = 'SEPA';
             $this->card_last_four = $paymentMethod->sepa_debit->last4;
         }
 
